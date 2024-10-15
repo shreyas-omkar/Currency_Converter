@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="container">
+        <div class="head">
+            <h1>Currency Converter 💱</h1>
+        </div>
+        <div class="getData">
+            <label for="currencyInput">Enter The Amount</label>
+            <input type="number" placeholder="100" name="currencyInput" id="currencyInput">
+        </div>
+        <div class="selectionCountry">
+            <div class="fromCountryContainer">
+                <label for="fromCountryDrop">From</label>
+                <div class="fromCountry">
+                    <img src="https://flagsapi.com/US/flat/48.png" id="fromFlag" alt="">
+                    <select name="fromCountryDrop" id="fromCountryDrop" >
+                        
+                    </select>
+                </div>
+            </div>
+            <div class="toCountryContainer">
+                <label for="toCountryDrop">To</label>
+                <div class="toCountry">
+                    <img src="https://flagsapi.com/IN/flat/48.png" id="toFlag" alt="">
+                    <select name="toCountryDrop" id="toCountryDrop">
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="exchangeRate">
+            <p id="exchangeRate">Exchange Rate</p>
+        </div>
+        <div class="exchangeBtn">
+            <button class="processExchange">
+                Process Exchange
+            </button>
+        </div>
+        <div class="displayData">
+            <p id="msgDisplay">Final Amounts</p>
+        </div>
+    </form>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
